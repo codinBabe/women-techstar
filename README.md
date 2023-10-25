@@ -1,1 +1,1 @@
-women techstar assignments and tasks
+This repo contain women techsters tasks and assignments
