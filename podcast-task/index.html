@@ -32,8 +32,15 @@
             border-radius: 10px;
         }
 
+        .container {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1024px;
+            padding: 1em;
+        }
+
         .size {
-            font-size: 12px;
+            font-size: 16px;
         }
 
         .bottom {
@@ -41,23 +48,26 @@
         }
 
         .left {
-            margin-left: 2.5em;
+            margin-left: 2em;
         }
 
         .weight {
             font-weight: 700;
         }
 
-        .flex {
+        /* .flex {
             display: flex;
             gap: 1em;
+            margin-left: 0;
+        } */
+        .pos {
+            position: relative;
         }
 
-        .container {
-            margin: 0 auto;
-            width: 80%;
-            max-width: 1024px;
-            padding: 1em;
+        .pos>time {
+            position: absolute;
+            top: 0;
+            left: -50px;
         }
     </style>
 </head>
@@ -77,13 +87,18 @@
             <video controls poster="https://images.pexels.com/photos/6953815/pexels-photo-6953815.jpeg">
                 <source src="./video/pexels-tea-oebel-6883830 (1080p).mp4" type="video/mp4">
             </video>
-            <section>
-                <h2 class="size flex"><time datetime="00:05">00:05</time>Speaker 1</h2>
-                <p class="left">How do you feel about the number of video calls you and your team are conducting?</p>
-                <h2 class="size flex"><time datetime="00:05">00:05</time> Speaker 2</h2>
-                <p class="left">The number of video calls has grown exponentially since our team moved to a remote
-                    environment. I
-                    feel emotionally and physically drained by the number of calls I have received.</p>
+            <section style="margin-left: .5em;">
+                <div class="pos">
+                    <time datetime="00:05">00:05</time>
+                    <h2 class="size">Speaker 1</h2>
+                </div>
+                <p>How do you feel about the number of video calls you and your team are conducting?</p>
+                <div class="pos">
+                    <time datetime="00:05">00:05</time>
+                    <h2 class="size">Speaker 2</h2>
+                </div>
+                <p>The number of video calls has grown exponentially since our team moved to a remote environment. I
+                    feel emotionally and physically drained by the number of calls I</p>
             </section>
         </article>
     </main>
