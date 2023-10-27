@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple podcast page">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Oluwatoyin Oredein">
+    <title>Podcast Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            height: 100vh;
+        }
+
+        h1,
+        h2 {
+            font-weight: 900;
+        }
+
+        time,
+        span {
+            color: grey;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .size {
+            font-size: 12px;
+        }
+
+        .bottom {
+            margin-bottom: 0;
+        }
+
+        .left {
+            margin-left: 2.5em;
+        }
+
+        .weight {
+            font-weight: 700;
+        }
+
+        .flex {
+            display: flex;
+            gap: 1em;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1024px;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <article>
+            <div class="left">
+                <h1 class="bottom">Faustina &lt;&gt; John (User Interview)</h1>
+                <time class="size weight" datetime="2023-09-17T11:54:00">Created on Sep 17, 11:54 AM</time>
+            </div>
+            <section class="left">
+                <p><strong>Project:</strong> <span>Staying connected in post-pandemic world</span></p>
+                <p><strong>Moderator:</strong> <span>Speaker 1</span></p>
+                <p><strong>Participant:</strong> <span>Speaker 2</span></p>
+            </section>
+            <video controls poster="https://images.pexels.com/photos/6953815/pexels-photo-6953815.jpeg">
+                <source src="./video/pexels-tea-oebel-6883830 (1080p).mp4" type="video/mp4">
+            </video>
+            <section>
+                <h2 class="size flex"><time datetime="00:05">00:05</time>Speaker 1</h2>
+                <p class="left">How do you feel about the number of video calls you and your team are conducting?</p>
+                <h2 class="size flex"><time datetime="00:05">00:05</time> Speaker 2</h2>
+                <p class="left">The number of video calls has grown exponentially since our team moved to a remote
+                    environment. I
+                    feel emotionally and physically drained by the number of calls I have received.</p>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
