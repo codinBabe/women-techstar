@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CSS GRID">
+    <meta name="description" content="A simple css grid page">
+    <meta name="author" content="Oluwatoyin Oredein">
+    <title>CSS GRID</title>
+
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            /* Header, Content, Footer */
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header,
+        footer {
+            background-color: red;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            /* Three columns */
+        }
+
+        /* Style for the individual column boxes here */
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first,
+        .last {
+            background-color: rosybrown;
+        }
+
+        .middle {
+            background-color: skyblue;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 7em;
+        }
+
+        div>p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="padding: 2em;" class="flex">
+        <div>
+            <p>fixed height</p>
+            <p>100% width</p>
+        </div>
+        <h1>header</h1>
+    </header>
+    <main>
+        <div class="column first">
+            <h2>left</h2>
+            <div>
+                <p>fixed width</p>
+                <p>100% height</p>
+            </div>
+
+        </div>
+        <div class="column middle">
+            <h2>middle</h2>
+            <div>
+                <p>100% width</p>
+                <p>100% height</p>
+            </div>
+
+        </div>
+        <div class="column last">
+            <h2>right</h2>
+            <div>
+                <p>fixed width</p>
+                <p>100% height</p>
+            </div>
+
+        </div>
+    </main>
+    <footer class="flex">
+        <h2>footer</h2>
+        <div>
+            <p>fixed height</p>
+            <p>100% width</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
