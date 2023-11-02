@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-CODE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+
+        }
+
+        .code {
+            margin-bottom: 10px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid black;
+        }
+
+        .input {
+            display: flex;
+            gap: 8px;
+        }
+
+        .input button {
+            padding: .2em;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn {
+            margin-top: 1em;
+            background-color: green;
+            color: white;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Scan QR code</h1>
+        <p>Scan this QR-code in app to verify a device</p>
+        <div class="img-contianer">
+            <img src="https://duckduckgo.com/i/87701897.png" alt="QR-codeimg">
+        </div>
+        <p class="code">or enter the code manually</p>
+        <form action="">
+            <div class="input">
+                <input type="text" name="text" id="text" value="HLA8G4L1B9ZX4">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z">
+                        </path>
+                    </svg></button>
+            </div>
+
+            <button class="btn" type="submit">continue</button>
+        </form>
+    </main>
+</body>
+
+</html>
