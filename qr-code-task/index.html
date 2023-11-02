@@ -4,71 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple QR SCAN page">
+    <meta name="keywords" content="QRCODE, HTML, CSS">
     <title>QR-CODE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-
-        }
-
-        .code {
-            margin-bottom: 10px;
-        }
-
-        input[type=text] {
-            width: 100%;
-            padding: 8px 12px;
-            border-radius: 8px;
-            outline: none;
-            border: 1px solid black;
-        }
-
-        .img-container {
-            border: 1px solid grey;
-            border-radius: 8px;
-        }
-
-        .input {
-            display: flex;
-            gap: 8px;
-        }
-
-        .input button {
-            padding: .2em;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .btn {
-            margin-top: 1em;
-            background-color: green;
-            color: white;
-            width: 100%;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 20px;
-        }
-    </style>
 </head>
 
 <body>
     <main>
         <h1>Scan QR code</h1>
         <p>Scan this QR-code in app to verify a device</p>
-        <div class="img-contianer">
+        <div class="img-container">
             <img src="https://duckduckgo.com/i/87701897.png" alt="QR-codeimg">
         </div>
         <p class="code">or enter the code manually</p>

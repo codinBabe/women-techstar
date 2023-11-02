@@ -1,0 +1,90 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        main>p {
+            font-size: .9rem;
+            color: grey;
+        }
+
+        .code {
+            margin: 1.5em 0;
+            position: relative;
+        }
+
+        .code::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -28px;
+            width: 25%;
+            border-top: 1px solid #ccc;
+        }
+
+        .code::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -28px;
+            width: 25%;
+            border-top: 1px solid #ccc;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: .8em 1.5em;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        .img-container {
+            margin-top: 2em;
+        }
+
+        img {
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+
+        .input {
+            display: flex;
+            gap: 8px;
+        }
+
+        .input button {
+            background: none;
+            padding: .6em;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .input button svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .btn {
+            margin-top: 2em;
+            background-color: green;
+            color: white;
+            text-transform: capitalize;
+            font-size: .9rem;
+            font-weight: 700;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 1em 1.5em;
+        }
