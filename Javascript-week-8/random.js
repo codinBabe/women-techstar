@@ -16,4 +16,4 @@ function guessNumber(targetNumber, userGuess) {
     }
 
 }
-guessNumber(targetNumber, 100);
+console.log(guessNumber(targetNumber, 100));
