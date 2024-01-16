@@ -1,0 +1,1 @@
+A simple image slide show with animations, fadeIn-fadeOut.

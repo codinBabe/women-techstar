@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 60%;
+    max-width:350px;
+    background-color: azure;
+    border-radius: 10px;
+     overflow: hidden;
+}
+.output{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em;
+   
+}
+.input{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.input > button{
+    border: none;
+    background-color: unset;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.input button:last-of-type{
+    grid-row: 2/6;
+    grid-column: 4/4;
+}
