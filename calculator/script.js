@@ -11,10 +11,9 @@ function displayInputText(){
         text.className = val;
         input.appendChild(text);
         text.addEventListener('click',()=> {
-            if (val == 'C' || val == '='){
-                ;
-            }else{
-                output.innerHTML = val
+            const ignoreDisplay = ['C', '=', '+','-','x','/'];
+            if (!ignoreDisplay.includes(val)){
+                output.innerHTML = val;
             }
         })
     });
